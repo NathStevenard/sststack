@@ -19,14 +19,14 @@ pip install -e .[dev]
 ```
 
 This will install:
-- core dependencies ([numpy], [pandas], [scipy], [tqdm],...)
+- core dependencies (numpy, pandas, scipy, tqdm,...)
 - development extras (pytest) if you use [dev]
 
 After installation you should be able to run:
 ```bash
 sststack --help
 ```
-You can try to run the test_import.py to ensure the installation is done.
+You can try to run the *test_import.py* to ensure the installation is done.
 
 ## Data formatting requirements
 
@@ -41,25 +41,27 @@ data_root/ (your personnal folder)
         └── {core}_{proxy}.txt
 ```
 - **Core_information.xlsx**
-Must follow the template provided in [examples/data/MIS9/Core_information.xlsx]
+Must follow the template provided in *examples/data/MIS9/Core_information.xlsx*
 Required columns: core, method, group, latitude, longitude
 - **File naming convention**
-Every file in [ens_age/] must match exactly the corresponding file in [ens_anomalies_annual/].
+Every file in ens_age/ must match exactly the corresponding file in ens_anomalies_annual/.
 Example:
 ```
 ens_age/ODP-1146_MgCa.txt
 ens_anomalies_annual/ODP-1146_MgCa.txt
 ```
-The {core} and {proxy} parts must be identical.
+The {core} and {proxy} parts must be identical in the two repositories.
 
 - **File format**
-Each file must be a N × 1000 tab-delimited matrix (no header):
+Each file must be a N x 1000 tab-delimited matrix (no header):
     - N = number of horizons (observed depths or ages)
     - 1000 = number of ensemble members
 - **Annual only**
 Only annual reconstructions are supported. Do not include seasonal files directory.
 - **Consistency**
-The set of files in [ens_age/] and [ens_anomalies_annual/] must match 1-to-1.
+The set of files in ens_age/ and ens_anomalies_annual/ must match 1-to-1.
+
+Note: if you have only a SST anomalies and standard deviation, please create a normalize random dataset with a N x 1000 size.
 
 ## Quick start with the template
 
@@ -100,8 +102,8 @@ BAN_LIST    = {'ODP-1146_d18O.txt','MD06-3074B_d18O.txt',... }
 Then just run the script, it will:
 - load your data and metadata,
 - run the stacking with parallel blocks (multiprocessing),
-- save ensemble ([ens/*.txt]) and percentile ([pct/*.txt]) outputs,
-- write logs and a report in [./runs/<timestamp>_<version>/],
+- save ensemble (ens/*.txt) and percentile (pct/*.txt) outputs,
+- write logs and a report in runs/<timestamp>_<version>/,
 - optionally export an Excel workbook,
 - and generate summary figures with the function plot_all().
 
@@ -129,10 +131,10 @@ examples/outputs/stacks_summary.png
 
 ## Example figure
 
-The plotting utility ([sststack.plotting.plot_all]) automatically builds multi-panels figures:
+The plotting utility (sststack.plotting.plot_all) automatically builds multi-panels figures:
 - **black line** = median (50th percentile),
 - **shaded envelop** = percentile bands (49-51, 48-52,...) with decreasing opacity,
-- **horizontal line** at 0°C for the PI reference.
+- **horizontal line** = the PI reference (0°C).
 
 ## Citations
 
