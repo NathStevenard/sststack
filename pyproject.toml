@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sststack"
-version = "0.1.0"
+version = "1.0.0"
 description = "Reproductible MIS 9 global/regional temperature stacks from SST reconstructions"
 readme = "README.md"
 authors = [{name="Stevenard Nathan", email="nathan.stevenard@univ-grenoble-alpes.fr"}]
