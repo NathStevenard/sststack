@@ -67,6 +67,7 @@ Note: if you have only a SST anomalies and standard deviation, please create a n
 
 The easiest way to use the package is via the provided template script:
 ```bash
+source .venv/bin/activate       # if not activated
 python examples.example_MIS9.py
 ```
 At the top of the template you can define your input settings:
