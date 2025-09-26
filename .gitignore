@@ -1,0 +1,54 @@
+# =========================
+# OS / editors
+# =========================
+.DS_Store
+Thumbs.db
+Icon?
+ehthumbs.db
+.idea/
+.vscode/
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+.installed.cfg
+pip-wheel-metadata/
+*.manifest
+*.spec
+
+# Env
+.venv/
+.env/
+venv/
+ENV/
+
+# =========================
+# Tests / Quality
+# =========================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.pytype/
+.ruff_cache/
+
+# =========================
+# Logs / reports / outputs
+# =========================
+*.log
+runs/
+*.outputs/
+*.png
+*.pdf
+*.svg
+
