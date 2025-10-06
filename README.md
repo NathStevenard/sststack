@@ -1,5 +1,9 @@
 # sststack — Global and regional stacking SST-based Temperature Reconstructions
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17209465.svg)](https://doi.org/10.5281/zenodo.17209465)
+![Licence MIT](https://img.shields.io/badge/license-MIT-green)
+![Python](https://img.shields.io/badge/python-3.11+-blue)
+
 **"sststack"** is a Python package to build reproducible global and regional temperature stacks from **sea-surface temperature (SST) reconstructions**.  
 The method follows the approach described in Stevenard et al. (2025)
 ---
@@ -140,12 +144,14 @@ The plotting utility (sststack.plotting.plot_all) automatically builds multi-pan
 ## Citations
 
 If you use this package in your research, please cite:
-- The original article: (full citation incoming)
-- If still in preprint, cite: 
+- The original article: (full citation will be updated after publication)
 ```
 Stevenard, N., Capron, É., Legrain, É., and Coutelle, C.: Global and regional sea-surface temperature changes over the Marine Isotopic Stage 9e and Termination IV, EGUsphere [preprint], https://doi.org/10.5194/egusphere-2025-1928, 2025.
 ```
-- This repository: https://github.com/NathStevenard/sststack.git
+- This repository: 
+```
+https://doi.org/10.5281/zenodo.17209465
+```
 
 ## License
 
