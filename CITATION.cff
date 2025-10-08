@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: sststack
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: Stevenard
+    given-names: Nathan
+    orcid: "https://orcid.org/0000-0002-1838-9291"
+version: 1.0
+date-released: 2025-09-24
+repository-code: "https://github.com/NathStevenard/sststack"
+license: MIT
+keywords: [climate, paleoclimate, sea-surface temperatures, temperature stacking, Monte Carlo]
+preferred-citation:
+  type: software
+  authors:
+    - family-names: Stevenard
+      given-names: Nathan
+  title: regimeshift-thresholds
+  version: 1.1
+  doi: 10.5281/zenodo.17209465
